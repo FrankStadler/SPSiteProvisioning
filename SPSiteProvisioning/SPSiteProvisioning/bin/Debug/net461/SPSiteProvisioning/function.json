@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "authLevel": "admin",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "..\\SPSiteProvisioning.dll",
+  "entryPoint": "SPSiteProvisioning.SPSiteProvisioning.Run"
+}
